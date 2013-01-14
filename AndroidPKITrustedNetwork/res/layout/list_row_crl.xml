@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dip" >
+
+    <!-- Issuer Name -->
+
+    <TextView
+        android:id="@+id/txtIssuerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:textSize="15dip"
+        android:textStyle="bold" />
+
+    <!-- Serial Number -->
+
+    <TextView
+        android:id="@+id/lblSerialNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/txtIssuerName"
+        android:layout_marginLeft="20dip"
+        android:text="@string/lblCertificateSerialNumber"
+        android:textSize="10dip" />
+
+    <TextView
+        android:id="@+id/txtSerialNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/lblSerialNumber"
+        android:layout_marginLeft="15dip"
+        android:layout_toRightOf="@id/lblSerialNumber"
+        android:textSize="10dip" />
+
+    <!-- Publish Date -->
+
+    <TextView
+        android:id="@+id/lblPublishDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/lblSerialNumber"
+        android:layout_marginLeft="20dip"
+        android:text="@string/lblPublishDate"
+        android:textSize="10dip" />
+
+    <TextView
+        android:id="@+id/txtPublishDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/lblPublishDate"
+        android:layout_marginLeft="15dip"
+        android:layout_toRightOf="@id/lblPublishDate"
+        android:textSize="10dip" />
+
+    <!-- Rightend Arrow -->
+
+    <ImageView
+        android:id="@+id/imgSeeDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/action_details"
+        android:src="@drawable/ic_action_details" />
+
+</RelativeLayout>

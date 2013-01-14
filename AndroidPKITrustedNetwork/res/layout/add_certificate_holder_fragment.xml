@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center" >
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/layoutAddCertificateHolderInformation"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <!-- Dummy item to prevent EditText from receiving focus -->
+
+        <LinearLayout
+            android:id="@+id/linearLayout_focus"
+            android:layout_width="0px"
+            android:layout_height="0px"
+            android:focusable="true"
+            android:focusableInTouchMode="true" />
+
+        <!-- Select Holder information -->
+
+        <TextView
+            android:id="@+id/lblSelectHolderInformation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="10dip"
+            android:text="@string/lblSelectHolderInformation"
+            android:textSize="15dip"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/layoutAvailableHolderFields"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/lblSelectHolderInformation"
+            android:layout_marginLeft="10dip" >
+
+            <!-- Owner Name -->
+
+            <Spinner
+                android:id="@+id/spinnerAddHolderFieldName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:textSize="15dip" />
+
+            <!-- Add Image button -->
+
+            <TextView
+                android:id="@+id/lblImgAddNewHolderField"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dip"
+                android:layout_alignParentRight="true"
+                android:drawableLeft="@drawable/ic_action_add"
+                android:gravity="center"
+                android:textSize="17dip"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <!-- Holder fields will be added dinamically -->
+
+        <LinearLayout
+            android:id="@+id/layoutHolderFields"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" 
+            android:layout_below="@id/layoutAvailableHolderFields">
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

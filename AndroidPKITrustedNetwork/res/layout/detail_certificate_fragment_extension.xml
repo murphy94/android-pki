@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center" >
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/layoutDetailCertificateExtensions"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/lblImgHideDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="15dip"
+            android:layout_marginTop="10dip"
+            android:drawableTop="@drawable/ic_action_see_hide"
+            android:gravity="center"
+            android:text="@string/lblBack"
+            android:textSize="15dip"
+            android:textStyle="bold" />
+
+        <!-- Certificate Key Usage Extension -->
+
+        <TextView
+            android:id="@+id/lblCertificateKeyUsage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="15dip"
+            android:layout_marginTop="15dip"
+            android:text="@string/lblCertificateKeyUsage"
+            android:textSize="15dip" />
+
+        <TextView
+            android:id="@+id/txtCertificateKeyUsage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lblCertificateKeyUsage"
+            android:layout_marginLeft="25dip"
+            android:textSize="15dip"
+            android:textStyle="bold" />
+
+        <!-- Certificate Basic Constrain Extension -->
+
+        <TextView
+            android:id="@+id/lblCertificateBasicConstrain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/txtCertificateKeyUsage"
+            android:layout_marginLeft="15dip"
+            android:text="@string/lblCertificateBasicConstrain"
+            android:textSize="15dip" />
+
+        <!-- Certificate Basic Constrain Is CA -->
+
+        <TextView
+            android:id="@+id/lblCertificateIsCA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/lblCertificateBasicConstrain"
+            android:layout_marginLeft="25dip"
+            android:text="@string/lblCertificateIsCA"
+            android:textSize="15dip" />
+
+        <TextView
+            android:id="@+id/txtCertificateIsCA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/lblCertificateIsCA"
+            android:layout_marginLeft="15dip"
+            android:layout_toRightOf="@id/lblCertificateIsCA"
+            android:textSize="15dip"
+            android:textStyle="bold" />
+
+        <!-- Certificate Basic Constrain Path Length -->
+
+        <TextView
+            android:id="@+id/lblCertificatePathLength"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/lblCertificateIsCA"
+            android:layout_marginLeft="25dip"
+            android:text="@string/lblCertificatePathLength"
+            android:textSize="15dip" />
+
+        <TextView
+            android:id="@+id/txtCertificatePathLength"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/lblCertificatePathLength"
+            android:layout_marginLeft="15dip"
+            android:layout_toRightOf="@id/lblCertificatePathLength"
+            android:textSize="15dip"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</ScrollView>

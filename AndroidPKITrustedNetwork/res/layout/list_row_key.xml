@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dip" >
+
+    <!-- Key Type -->
+
+    <TextView
+        android:id="@+id/txtKeyType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:textSize="15dip"
+        android:textStyle="bold" />
+
+    <!-- Key Comment -->
+
+    <TextView
+        android:id="@+id/txtKeyComment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/txtKeyType"
+        android:layout_marginLeft="20dip"
+        android:textSize="10dip" />
+
+    <!-- Key CreationDate -->
+
+    <TextView
+        android:id="@+id/txtKeyCreation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/txtKeyComment"
+        android:layout_marginLeft="20dip"
+        android:layout_toRightOf="@id/txtKeyComment"
+        android:textSize="10dip" />
+
+    <!-- Key Unique ID -->
+
+    <TextView
+        android:id="@+id/txtKeyUniqueId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/txtKeyComment"
+        android:layout_marginLeft="20dip"
+        android:textSize="10dip" />
+
+</RelativeLayout>

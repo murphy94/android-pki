@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center" >
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/layoutDetailCertificateBasicInformation"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/lblImgHideDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="15dip"
+            android:layout_marginTop="10dip"
+            android:drawableTop="@drawable/ic_action_see_hide"
+            android:gravity="center"
+            android:text="@string/lblBack"
+            android:textSize="15dip"
+            android:textStyle="bold" />
+
+        <!-- Certificate Version -->
+
+        <TextView
+            android:id="@+id/lblCertificateVersion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="15dip"
+            android:layout_marginTop="15dip"
+            android:text="@string/lblCertificateVersion"
+            android:textSize="15dip" />
+
+        <TextView
+            android:id="@+id/txtCertificateVersion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/lblCertificateVersion"
+            android:layout_marginLeft="15dip"
+            android:layout_toRightOf="@id/lblCertificateVersion"
+            android:textSize="15dip"
+            android:textStyle="bold" />
+
+        <!-- Certificate Serial Number -->
+
+        <TextView
+            android:id="@+id/lblCertificateSerialNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/lblCertificateVersion"
+            android:layout_marginLeft="15dip"
+            android:text="@string/lblCertificateSerialNumber"
+            android:textSize="15dip" />
+
+        <TextView
+            android:id="@+id/txtCertificateSerialNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/lblCertificateSerialNumber"
+            android:layout_marginLeft="15dip"
+            android:layout_toRightOf="@id/lblCertificateSerialNumber"
+            android:textSize="15dip"
+            android:textStyle="bold" />
+
+        <!-- Certificate Validity -->
+
+        <TextView
+            android:id="@+id/lblCertificateValidity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/lblCertificateSerialNumber"
+            android:layout_marginLeft="15dip"
+            android:text="@string/lblCertificateValidity"
+            android:textSize="15dip" />
+
+        <!-- Certificate Not Before -->
+
+        <TextView
+            android:id="@+id/lblCertificateNotBefore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/lblCertificateValidity"
+            android:layout_marginLeft="25dip"
+            android:text="@string/lblCertificateNotBefore"
+            android:textSize="15dip" />
+
+        <TextView
+            android:id="@+id/txtCertificateNotBefore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/lblCertificateNotBefore"
+            android:layout_marginLeft="15dip"
+            android:layout_toRightOf="@id/lblCertificateNotBefore"
+            android:textSize="15dip"
+            android:textStyle="bold" />
+
+        <!-- Certificate Not After -->
+
+        <TextView
+            android:id="@+id/lblCertificateNotAfter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/lblCertificateNotBefore"
+            android:layout_marginLeft="25dip"
+            android:text="@string/lblCertificateNotAfter"
+            android:textSize="15dip" />
+
+        <TextView
+            android:id="@+id/txtCertificateNotAfter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/lblCertificateNotAfter"
+            android:layout_marginLeft="15dip"
+            android:layout_toRightOf="@id/lblCertificateNotAfter"
+            android:textSize="15dip"
+            android:textStyle="bold" />
+
+        <!-- Certificate Sign Algorithm -->
+
+        <TextView
+            android:id="@+id/lblCertificateSignaturenatureAlgorithm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/txtCertificateNotAfter"
+            android:layout_marginLeft="15dip"
+            android:text="@string/lblCertificateSignaturenatureAlgorithm"
+            android:textSize="15dip" />
+
+        <TextView
+            android:id="@+id/txtCertificateSignaturenatureAlgorithm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/lblCertificateSignaturenatureAlgorithm"
+            android:layout_marginLeft="25dip"
+            android:singleLine="false"
+            android:textSize="15dip"
+            android:textStyle="bold" />
+
+        <!-- Certificate Sign -->
+
+        <TextView
+            android:id="@+id/lblCertificateSignaturenature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/txtCertificateSignaturenatureAlgorithm"
+            android:layout_marginLeft="15dip"
+            android:text="@string/lblCertificateSignaturenature"
+            android:textSize="15dip" />
+
+        <TextView
+            android:id="@+id/txtCertificateSignaturenature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/lblCertificateSignaturenature"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:singleLine="false"
+            android:textSize="15dip"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/lblImgSeeMoreDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtCertificateSignaturenature"
+            android:layout_marginLeft="15dip"
+            android:layout_marginTop="10dip"
+            android:drawableLeft="@drawable/ic_action_see_more"
+            android:gravity="center"
+            android:text="@string/lblSeeExtension"
+            android:textSize="15dip"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</ScrollView>

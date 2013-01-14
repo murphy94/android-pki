@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center" >
+
+    <RelativeLayout
+   	    xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/layoutDetailCertificateIssuerInformation"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/lblImgHideDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="15dip"
+            android:layout_marginTop="10dip"
+            android:drawableTop="@drawable/ic_action_see_hide"
+            android:text="@string/lblBack"
+            android:textSize="15dip"
+            android:textStyle="bold" />
+       
+        <!-- Certificate IssuerDN -->
+
+        <TextView
+            android:id="@+id/lblCertificateIssuerDN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+           android:layout_marginLeft="15dip"
+            android:layout_marginTop="25dip"
+            android:text="@string/lblCertificateIssuerDN"
+            android:textSize="15dip" />
+
+        <TextView
+            android:id="@+id/txtCertificateIssuerDN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/lblCertificateIssuerDN"
+            android:layout_marginLeft="25dip"
+            android:layout_marginRight="20dip"
+            android:singleLine="false"
+            android:textSize="15dip"
+            android:textStyle="bold" />
+
+        <!-- Certificate Issuer Key ID -->
+
+        <TextView
+            android:id="@+id/lblCertificateAuthKeyId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/txtCertificateIssuerDN"
+            android:layout_marginLeft="15dip"
+            android:text="@string/lblCertificateAuthKeyId"
+            android:textSize="15dip" />
+
+        <TextView
+            android:id="@+id/txtCertificateAuthKeyId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/lblCertificateAuthKeyId"
+            android:layout_marginLeft="25dip"
+            android:layout_marginRight="20dip"
+            android:singleLine="false"
+            android:textSize="15dip"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/lblImgSearchCertificate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtCertificateAuthKeyId"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dip"
+            android:drawableLeft="@drawable/ic_action_cert_details"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/lblImgSearchCertificate"
+            android:textSize="15dip"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/lblImgSeeMoreDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lblImgSearchCertificate"
+            android:layout_marginLeft="15dip"
+            android:layout_marginTop="10dip"
+            android:drawableLeft="@drawable/ic_action_see_more"
+            android:gravity="center"
+            android:text="@string/lblSeeExtension"
+            android:textSize="15dip"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</ScrollView>

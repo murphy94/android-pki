@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:id="@+id/layoutMap">
+    <!-- <com.google.android.maps.MapView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/mapview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:apiKey="0u-HXCh9yfz7O9K7DnYFaruqTOIhqHBL2B4zvPg"
+        android:clickable="true" /> -->
+    
+     <TextView
+        android:id="@+id/lblImgHideDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="15dip"
+        android:layout_marginTop="10dip"
+        android:drawableTop="@drawable/ic_action_see_hide"
+        android:gravity="center"
+        android:text="@string/lblBack"
+        android:textSize="15dip"
+        android:textStyle="bold" />
+
+</RelativeLayout>

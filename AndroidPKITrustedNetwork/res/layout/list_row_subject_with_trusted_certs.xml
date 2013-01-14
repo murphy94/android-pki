@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dip" >
+
+    <!-- Owner Name -->
+
+    <TextView
+        android:id="@+id/txtOwnerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:textSize="15dip"
+        android:textStyle="bold" />
+
+    <!-- Total -->
+
+    <TextView
+        android:id="@+id/txtCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/txtOwnerName"
+        android:layout_marginLeft="20dip"
+        android:textSize="10dip" />
+
+    <!-- Device Id -->
+
+    <TextView
+        android:id="@+id/lblOwnerDeviceId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/txtCount"
+        android:layout_marginLeft="20dip"
+        android:textSize="10dip" />
+
+    <!-- Rightend Arrow -->
+
+    <ImageView
+        android:id="@+id/imgSeeDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/action_details"
+        android:src="@drawable/ic_action_details" />
+
+</RelativeLayout>

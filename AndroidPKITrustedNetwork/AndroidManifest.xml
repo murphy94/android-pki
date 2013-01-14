@@ -1,0 +1,175 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cinvestav.pki.android.trustednetwork"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="15" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- We need Internet in order to load the maps. -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        <!-- We need to tell Android that we'll be using Google Maps Library. -->
+        <uses-library android:name="com.google.android.maps" />
+
+        <activity
+            android:name=".main.PKITrustNetworkActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AndroidPKITrustNetwork"
+            android:uiOptions="splitActionBarWhenNarrow" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".main.SecureSectionActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AndroidPKITrustNetwork" />
+        <activity
+            android:name=".main.SettingsSectionActivity"
+            android:label="@string/subtitle_settings"
+            android:theme="@style/Theme.AndroidPKITrustNetwork" />
+        <activity
+            android:name=".details.KeyDetailsActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AndroidPKITrustNetwork"
+            android:uiOptions="splitActionBarWhenNarrow" />
+        <activity
+            android:name=".details.CertificateDetailsActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AndroidPKITrustNetwork"
+            android:uiOptions="splitActionBarWhenNarrow" />
+        <activity
+            android:name=".selection.SelectOwnerActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AndroidPKITrustNetwork"
+            android:uiOptions="splitActionBarWhenNarrow" >
+        </activity>
+        <activity
+            android:name=".selection.SelectHolderWithKeysActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AndroidPKITrustNetwork"
+            android:uiOptions="splitActionBarWhenNarrow" >
+        </activity>
+        <activity
+            android:name=".selection.SelectCAHolderActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AndroidPKITrustNetwork"
+            android:uiOptions="splitActionBarWhenNarrow" >
+        </activity>
+        <activity
+            android:name=".selection.SelectCAElementsActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AndroidPKITrustNetwork"
+            android:uiOptions="splitActionBarWhenNarrow" >
+        </activity>
+        <activity
+            android:name=".selection.SelectCertificateActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AndroidPKITrustNetwork"
+            android:uiOptions="splitActionBarWhenNarrow" >
+        </activity>
+        <activity
+            android:name=".selection.SelectHolderWithCertificateActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AndroidPKITrustNetwork"
+            android:uiOptions="splitActionBarWhenNarrow" >
+        </activity>
+        <activity
+            android:name=".selection.SelectKeyActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AndroidPKITrustNetwork"
+            android:uiOptions="splitActionBarWhenNarrow" >
+        </activity>
+        <activity
+            android:name=".selection.SelectVerificationTypeActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AndroidPKITrustNetwork"
+            android:uiOptions="splitActionBarWhenNarrow" >
+        </activity>
+        <activity
+            android:name=".add.AddNewKeyActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AndroidPKITrustNetwork"
+            android:uiOptions="splitActionBarWhenNarrow" >
+        </activity>
+        <activity
+            android:name=".add.AddNewCertificateSelectKeyOptionsActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AndroidPKITrustNetwork"
+            android:uiOptions="splitActionBarWhenNarrow" >
+        </activity>
+        <activity
+            android:name=".add.AddNewCertificateActivity"
+            android:finishOnTaskLaunch="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AndroidPKITrustNetwork"
+            android:uiOptions="splitActionBarWhenNarrow" >
+        </activity>
+        <activity
+            android:name=".add.SignCertificateActivity"
+            android:finishOnTaskLaunch="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AndroidPKITrustNetwork"
+            android:uiOptions="splitActionBarWhenNarrow" >
+        </activity>
+        <activity
+            android:name=".add.SignTypeCertificateActivity"
+            android:finishOnTaskLaunch="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AndroidPKITrustNetwork"
+            android:uiOptions="splitActionBarWhenNarrow" >
+        </activity>
+        <activity
+            android:name=".update.UpdateKeyActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AndroidPKITrustNetwork"
+            android:uiOptions="splitActionBarWhenNarrow" >
+        </activity>
+        <activity
+            android:name=".share.ExportKeyActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AndroidPKITrustNetwork"
+            android:uiOptions="splitActionBarWhenNarrow" >
+        </activity>
+        <activity
+            android:name=".share.ExportCertificateActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AndroidPKITrustNetwork"
+            android:uiOptions="splitActionBarWhenNarrow" >
+        </activity>
+        <activity
+            android:name=".share.ImportNewKeyActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AndroidPKITrustNetwork"
+            android:uiOptions="splitActionBarWhenNarrow" >
+        </activity>
+        <activity
+            android:name=".share.ImportCertificateActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AndroidPKITrustNetwork"
+            android:uiOptions="splitActionBarWhenNarrow" >
+        </activity>
+        <activity
+            android:name=".crypto.VerifyPGPActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AndroidPKITrustNetwork"
+            android:uiOptions="splitActionBarWhenNarrow" >
+        </activity>
+        <activity
+            android:name=".crypto.VerifyX509Activity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AndroidPKITrustNetwork"
+            android:uiOptions="splitActionBarWhenNarrow" >
+        </activity>
+    </application>
+
+</manifest>

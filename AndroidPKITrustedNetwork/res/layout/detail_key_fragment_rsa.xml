@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center" >
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/layoutDetailKeyRSA"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/lblImgHideDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="15dip"
+            android:layout_marginTop="10dip"
+            android:drawableTop="@drawable/ic_action_see_hide"
+            android:gravity="center"
+            android:text="@string/lblBack"
+            android:textSize="15dip"
+            android:textStyle="bold" />
+
+        <!-- Key Size -->
+
+        <TextView
+            android:id="@+id/lblDetailsKeyRSASize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="10dip"
+            android:text="@string/lblKeySize"
+            android:textSize="15dip" />
+
+        <TextView
+            android:id="@+id/txtDetailsKeyRSASize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/lblDetailsKeyRSASize"
+            android:layout_marginLeft="20dip"
+            android:singleLine="false"
+            android:textSize="15dip"
+            android:textStyle="bold" />
+
+        <!-- Key Modulus -->
+
+        <TextView
+            android:id="@+id/lblDetailsKeyRSAModulus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/txtDetailsKeyRSASize"
+            android:layout_marginLeft="10dip"
+            android:text="@string/lblKeyRSAModulus"
+            android:textSize="15dip" />
+
+        <TextView
+            android:id="@+id/txtDetailsKeyRSAModulus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/lblDetailsKeyRSAModulus"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="10dip"
+            android:singleLine="false"
+            android:textSize="13dip"
+            android:textStyle="bold" />
+
+        <!-- Key Public Exponent -->
+
+        <TextView
+            android:id="@+id/lblDetailsKeyRSAPublicExp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/txtDetailsKeyRSAModulus"
+            android:layout_marginLeft="10dip"
+            android:text="@string/lblKeyRSAPublicExp"
+            android:textSize="15dip" />
+
+        <TextView
+            android:id="@+id/txtDetailsKeyRSAPublicExp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/lblDetailsKeyRSAPublicExp"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="10dip"
+            android:singleLine="false"
+            android:textSize="13dip"
+            android:textStyle="bold" />
+
+        <!-- Key Private Exponent -->
+
+        <TextView
+            android:id="@+id/lblDetailsKeyRSAPrivateExp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/txtDetailsKeyRSAPublicExp"
+            android:layout_marginLeft="10dip"
+            android:text="@string/lblKeyRSAPrivateExp"
+            android:textSize="15dip" />
+
+        <TextView
+            android:id="@+id/txtDetailsKeyRSAPrivateExp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/lblDetailsKeyRSAPrivateExp"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="10dip"
+            android:singleLine="false"
+            android:textSize="13dip"
+            android:textStyle="bold" />
+
+        <!-- Key Prime A -->
+
+        <TextView
+            android:id="@+id/lblDetailsKeyRSAPrimeA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/txtDetailsKeyRSAPrivateExp"
+            android:layout_marginLeft="10dip"
+            android:text="@string/lblKeyRSAPrimeA"
+            android:textSize="15dip" />
+
+        <TextView
+            android:id="@+id/txtDetailsKeyRSAPrimeA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/lblDetailsKeyRSAPrimeA"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="10dip"
+            android:singleLine="false"
+            android:textSize="13dip"
+            android:textStyle="bold" />
+
+        <!-- Key Prime B -->
+
+        <TextView
+            android:id="@+id/lblDetailsKeyRSAPrimeB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/txtDetailsKeyRSAPrimeA"
+            android:layout_marginLeft="10dip"
+            android:text="@string/lblKeyRSAPrimeB"
+            android:textSize="15dip" />
+
+        <TextView
+            android:id="@+id/txtDetailsKeyRSAPrimeB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/lblDetailsKeyRSAPrimeB"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="10dip"
+            android:singleLine="false"
+            android:textSize="13dip"
+            android:textStyle="bold" />
+
+        <!-- Key ExponentA -->
+
+        <TextView
+            android:id="@+id/lblDetailsKeyRSAExponentA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/txtDetailsKeyRSAPrimeB"
+            android:layout_marginLeft="10dip"
+            android:text="@string/lblKeyRSAExponentA"
+            android:textSize="15dip" />
+
+        <TextView
+            android:id="@+id/txtDetailsKeyRSAExponentA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/lblDetailsKeyRSAExponentA"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="10dip"
+            android:singleLine="false"
+            android:textSize="13dip"
+            android:textStyle="bold" />
+
+        <!-- Key Exponent B -->
+
+        <TextView
+            android:id="@+id/lblDetailsKeyRSAExponentB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/txtDetailsKeyRSAExponentA"
+            android:layout_marginLeft="10dip"
+            android:text="@string/lblKeyRSAExponentB"
+            android:textSize="15dip" />
+
+        <TextView
+            android:id="@+id/txtDetailsKeyRSAExponentB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/lblDetailsKeyRSAExponentB"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="10dip"
+            android:singleLine="false"
+            android:textSize="13dip"
+            android:textStyle="bold" />
+
+        <!-- Key Coefficient -->
+
+        <TextView
+            android:id="@+id/lblDetailsKeyRSACoefficient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/txtDetailsKeyRSAExponentB"
+            android:layout_marginLeft="10dip"
+            android:text="@string/lblKeyRSACoefficient"
+            android:textSize="15dip" />
+
+        <TextView
+            android:id="@+id/txtDetailsKeyRSACoefficient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/lblDetailsKeyRSACoefficient"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="10dip"
+            android:singleLine="false"
+            android:textSize="13dip"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</ScrollView>

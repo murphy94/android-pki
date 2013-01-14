@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- Dummy item to prevent EditText from receiving focus -->
+
+    <LinearLayout
+        android:id="@+id/linearLayout_focus"
+        android:layout_width="0px"
+        android:layout_height="0px"
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/layoutKeyType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dip" >
+
+        <!-- Key Type -->
+
+        <TextView
+            android:id="@+id/lblKeyType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="@string/lblKeyType"
+            android:textSize="15dip"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spinnerKeyType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/lblKeyType" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/embedded"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layoutKeyType"
+        android:layout_centerHorizontal="true"
+        android:padding="6dp" />
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/layoutComment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/embedded"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dip" >
+
+        <TextView
+            android:id="@+id/lblKeyComment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/lblKeyComment"
+            android:textSize="15dip"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/txtKeyComment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/lblKeyComment"
+            android:layout_marginLeft="10dip"
+            android:hint="@string/lblKeyComment"
+            android:textSize="15dip"
+            android:width="250dip" />
+    </RelativeLayout>
+
+</RelativeLayout>

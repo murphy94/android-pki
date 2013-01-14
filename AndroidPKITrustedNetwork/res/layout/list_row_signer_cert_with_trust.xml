@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dip" >
+
+    <!-- Owner Name -->
+
+    <TextView
+        android:id="@+id/txtCertificateHolderAlias"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:textSize="15dip"
+        android:textStyle="bold" />
+
+    <!-- Serial Number -->
+
+    <TextView
+        android:id="@+id/txtCertificateSerialNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/txtCertificateHolderAlias"
+        android:layout_marginLeft="10dip"
+        android:textSize="10dip"
+        android:textStyle="bold" />
+
+    <!-- Certificate Status -->
+
+    <TextView
+        android:id="@+id/txtCertificateStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/txtCertificateSerialNumber"
+        android:layout_marginLeft="20dip"
+        android:layout_toRightOf="@id/txtCertificateSerialNumber"
+        android:textSize="10dip"
+        android:textStyle="bold" />
+
+    <!-- Certificate Status Update -->
+
+    <TextView
+        android:id="@+id/txtCertificateStatusUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/txtCertificateSerialNumber"
+        android:layout_marginLeft="5dip"
+        android:layout_toRightOf="@id/txtCertificateStatus"
+        android:textSize="10dip" />
+
+    <!-- Issuer Alias -->
+
+    <TextView
+        android:id="@+id/txtCertificateIssuerAlias"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/txtCertificateSerialNumber"
+        android:layout_marginLeft="10dip"
+        android:textSize="10dip" />
+    
+     <!-- Trust Level -->
+
+    <TextView
+        android:id="@+id/txtTrustLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/txtCertificateIssuerAlias"
+        android:layout_marginLeft="10dip"
+        android:textSize="13dip"
+        android:textStyle="bold" />
+    
+    <!-- Search button -->
+
+    <ImageView
+        android:id="@+id/imgSeeDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/action_details"
+        android:src="@drawable/ic_action_cert_details" />
+
+</RelativeLayout>

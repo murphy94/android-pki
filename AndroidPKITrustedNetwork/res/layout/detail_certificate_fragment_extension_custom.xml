@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center" >
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/layoutDetailCertificateExtensions"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/lblImgHideDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="15dip"
+            android:layout_marginTop="10dip"
+            android:drawableTop="@drawable/ic_action_see_hide"
+            android:gravity="center"
+            android:text="@string/lblBack"
+            android:textSize="15dip"
+            android:textStyle="bold" />
+
+        <!-- Certificate Creation Device ID Extension -->
+
+        <TextView
+            android:id="@+id/lblCertificateDeviceId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="15dip"
+            android:layout_marginTop="15dip"
+            android:text="@string/lblCertificateDeviceId"
+            android:textSize="15dip" />
+
+        <TextView
+            android:id="@+id/txtCertificateDeviceId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lblCertificateDeviceId"
+            android:layout_marginLeft="25dip"
+            android:textSize="15dip"
+            android:textStyle="bold" />
+        
+         <!-- Certificate Sign Device ID Extension -->
+
+        <TextView
+            android:id="@+id/lblCertificateSignDeviceId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/txtCertificateDeviceId"
+            android:layout_marginLeft="15dip"
+            android:text="@string/lblCertificateSignDeviceId"
+            android:textSize="15dip" />
+
+        <TextView
+            android:id="@+id/txtCertificateSignDeviceId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lblCertificateSignDeviceId"
+            android:layout_marginLeft="25dip"
+            android:textSize="15dip"
+            android:textStyle="bold" />
+
+        <!-- Certificate Type -->
+
+        <TextView
+            android:id="@+id/lblCertificateType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/txtCertificateSignDeviceId"
+            android:layout_marginLeft="15dip"
+            android:text="@string/lblCertificateType"
+            android:textSize="15dip" />
+
+        <TextView
+            android:id="@+id/txtCertificateType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lblCertificateType"
+            android:layout_marginLeft="25dip"
+            android:textSize="15dip"
+            android:textStyle="bold" />
+
+        <!-- Certificate User ID Extension -->
+
+        <TextView
+            android:id="@+id/lblCertificateUserId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/txtCertificateType"
+            android:layout_marginLeft="15dip"
+            android:text="@string/lblCertificateUserId"
+            android:textSize="15dip" />
+
+        <TextView
+            android:id="@+id/txtCertificateUserId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lblCertificateUserId"
+            android:layout_marginLeft="25dip"
+            android:textSize="15dip"
+            android:textStyle="bold" />
+
+        <!-- Certificate User Permission Extension -->
+
+        <TextView
+            android:id="@+id/lblCertificateUserPermission"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/txtCertificateUserId"
+            android:layout_marginLeft="15dip"
+            android:text="@string/lblCertificateUserPermission"
+            android:textSize="15dip" />
+
+        <TextView
+            android:id="@+id/txtCertificateUserPermission"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lblCertificateUserPermission"
+            android:layout_marginLeft="25dip"
+            android:textSize="15dip"
+            android:textStyle="bold" />
+
+        <!-- Certificate Identification Document Extension -->
+
+        <TextView
+            android:id="@+id/lblCertificateIdentificationDocument"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/txtCertificateUserPermission"
+            android:layout_marginLeft="15dip"
+            android:text="@string/lblCertificateIdentificationDocument"
+            android:textSize="15dip" />
+
+        <TextView
+            android:id="@+id/txtCertificateIdentificationDocument"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lblCertificateIdentificationDocument"
+            android:layout_marginLeft="25dip"
+            android:textSize="15dip"
+            android:textStyle="bold" />
+
+        <!-- Certificate Possition Extension -->
+
+        <TextView
+            android:id="@+id/lblCertificateCreationPossition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/txtCertificateIdentificationDocument"
+            android:layout_marginLeft="15dip"
+            android:text="@string/lblCertificateCreationPossition"
+            android:textSize="15dip" />
+
+        <TextView
+            android:id="@+id/txtCertificateCreationPossition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lblCertificateCreationPossition"
+            android:layout_marginLeft="25dip"
+            android:textSize="15dip"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/lblImgSearchPoint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtCertificateCreationPossition"
+            android:layout_centerHorizontal="true"
+            android:drawableLeft="@drawable/ic_action_see_map"
+            android:gravity="center"
+            android:text="@string/lblSearchPointInMap"
+            android:textSize="15dip"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</ScrollView>

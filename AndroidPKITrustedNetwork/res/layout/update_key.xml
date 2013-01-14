@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <!-- Dummy item to prevent EditText from receiving focus -->
+
+        <LinearLayout
+            android:id="@+id/linearLayout_focus"
+            android:layout_width="0px"
+            android:layout_height="0px"
+            android:focusable="true"
+            android:focusableInTouchMode="true" />
+
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/layoutComment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dip" >
+
+            <TextView
+                android:id="@+id/lblKeyComment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="@string/lblKeyComment"
+                android:textSize="15dip"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txtKeyComment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/lblKeyComment"
+                android:layout_marginLeft="10dip"
+                android:hint="@string/lblKeyComment"
+                android:textSize="15dip"
+                android:width="250dip" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/layoutChkUpdatePassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layoutComment"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dip"
+            android:visibility="gone" >
+
+            <!-- Update Password check Box -->
+
+            <CheckBox
+                android:id="@+id/chkUpdateKeyPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="@string/lblUpdatePassword"
+                android:textSize="15dip"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/layoutPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layoutChkUpdatePassword"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dip"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/lblPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="@string/lblPasswordKey"
+                android:textSize="15dip"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txtPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/lblPassword"
+                android:layout_marginLeft="10dip"
+                android:hint="@string/lblPassword"
+                android:inputType="textPassword"
+                android:textSize="15dip"
+                android:width="225dip" />
+
+            <EditText
+                android:id="@+id/txtPasswordConfirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/txtPassword"
+                android:layout_marginLeft="10dip"
+                android:hint="@string/lblPasswordConfirm"
+                android:inputType="textPassword"
+                android:textSize="15dip"
+                android:width="225dip" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layoutPasswordPKCS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layoutPassword"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dip"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/lblPasswordPKCS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="@string/lblPasswordPKCS12"
+                android:textSize="15dip"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txtPasswordPKCS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/lblPasswordPKCS"
+                android:layout_marginLeft="10dip"
+                android:hint="@string/lblPassword"
+                android:inputType="textPassword"
+                android:textSize="15dip"
+                android:width="225dip" />
+
+            <EditText
+                android:id="@+id/txtPasswordConfirmPKCS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/txtPasswordPKCS"
+                android:layout_marginLeft="10dip"
+                android:hint="@string/lblPasswordConfirm"
+                android:inputType="textPassword"
+                android:textSize="15dip"
+                android:width="225dip" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</ScrollView>

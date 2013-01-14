@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- Dummy item to prevent EditText from receiving focus -->
+
+    <LinearLayout
+        android:id="@+id/linearLayout_focus"
+        android:layout_width="0px"
+        android:layout_height="0px"
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
+
+    <FrameLayout
+        android:id="@+id/embedded"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:padding="6dp" />
+
+    <TextView
+        android:id="@+id/lblSelectCA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/embedded"
+        android:layout_marginTop="10dip"
+        android:layout_marginLeft="15dip"
+        android:text="@string/lblSelectCA"
+        android:textSize="15dip"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/listCACertificates"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/lblSelectCA"
+        android:layout_marginTop="10dip"
+        android:choiceMode="singleChoice"
+        android:drawSelectorOnTop="true" />
+
+</RelativeLayout>

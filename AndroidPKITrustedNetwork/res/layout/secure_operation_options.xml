@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/layoutOperation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="20dip" >
+
+        <!-- Operation -->
+
+        <TextView
+            android:id="@+id/lblOperation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/lblOperation"
+            android:textSize="15dip" />
+
+        <Spinner
+            android:id="@+id/spinnerOperation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lblOperation"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <ViewFlipper
+        android:id="@+id/flipperOperation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layoutOperation"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dip" >
+
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/layoutCipher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <CheckBox
+                    android:id="@+id/chkCipher"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:text="@string/lblCipher"
+                    android:textSize="15dip" />
+
+                <TextView
+                    android:id="@+id/lblImgSearchCipherPublicCert"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/chkCipher"
+                    android:layout_marginLeft="15dip"
+                    android:layout_marginTop="10dip"
+                    android:drawableLeft="@drawable/ic_action_cert_details"
+                    android:gravity="center"
+                    android:text="@string/lblImgSearchCipherPublicCert"
+                    android:textSize="15dip"
+                    android:visibility="gone" />
+                
+
+                <CheckBox
+                    android:id="@+id/chkDeleteAfter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/lblImgSearchCipherPublicCert"
+                    android:layout_marginLeft="15dip"
+                    android:text="@string/lblDeleteAfter"
+                    android:textSize="15dip"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/layoutSign"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layoutCipher" >
+
+                <CheckBox
+                    android:id="@+id/chkSign"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:text="@string/lblSign"
+                    android:textSize="15dip" />
+
+                <TextView
+                    android:id="@+id/lblImgSearchSignPrivateKey"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/chkSign"
+                    android:layout_marginLeft="15dip"
+                    android:layout_marginTop="10dip"
+                    android:drawableLeft="@drawable/ic_action_key_details"
+                    android:gravity="center"
+                    android:text="@string/lblImgSearchSignPrivateKey"
+                    android:textSize="15dip"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/layoutDecipher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <CheckBox
+                    android:id="@+id/chkDecipher"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:text="@string/lblDecipher"
+                    android:textSize="15dip" />
+
+                <TextView
+                    android:id="@+id/lblImgSearchDecipherPrivateKey"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/chkDecipher"
+                    android:layout_marginLeft="15dip"
+                    android:layout_marginTop="10dip"
+                    android:drawableLeft="@drawable/ic_action_key_details"
+                    android:gravity="center"
+                    android:text="@string/lblImgSearchDecipherPrivateKey"
+                    android:textSize="15dip"
+                    android:visibility="gone" />
+                
+
+                <CheckBox
+                    android:id="@+id/chkDeleteAfterDecipher"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/lblImgSearchDecipherPrivateKey"
+                    android:layout_marginLeft="15dip"
+                    android:text="@string/lblDeleteAfter"
+                    android:textSize="15dip"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/layoutVerify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layoutDecipher" >
+
+                <CheckBox
+                    android:id="@+id/chkVerify"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:text="@string/lblVerify"
+                    android:textSize="15dip" />
+
+                <TextView
+                    android:id="@+id/lblImgSearchVerifyPublicCert"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/chkVerify"
+                    android:layout_marginLeft="15dip"
+                    android:layout_marginTop="10dip"
+                    android:drawableLeft="@drawable/ic_action_cert_details"
+                    android:gravity="center"
+                    android:text="@string/lblImgSearchVerifyPublicCert"
+                    android:textSize="15dip"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ViewFlipper>
+
+</RelativeLayout>
