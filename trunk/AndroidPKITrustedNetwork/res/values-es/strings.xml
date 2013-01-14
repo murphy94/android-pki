@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">PKI Red de Confianza</string>
+    <string name="ic_menu_secure">Cifrar/Decifrar</string>
+    <string name="ic_menu_settings">Ajustes</string>
+    <string name="ic_menu_keys">Claves</string>
+    <string name="ic_menu_cert">Certificados</string>
+    <string name="ic_menu_crl">CRL</string>
+    <string name="ic_menu_trust_network">Red de Confianza</string>
+    <string name="subtitle_keys">Claves</string>
+    <string name="subtitle_keys_new">Crear Clave</string>
+    <string name="subtitle_keys_update">Modificar Clave</string>
+    <string name="subtitle_keys_import">Importar Clave</string>
+    <string name="subtitle_keys_export">Exportar Clave</string>
+    <string name="subtitle_keys_detail">Detalles de Clave</string>
+    <string name="subtitle_keys_collection">Ver Claves</string>
+    <string name="subtitle_secure">Operaciones criptográficas</string>
+    <string name="subtitle_settings">Ajustes</string>
+    <string name="subtitle_cert">Certificados</string>
+    <string name="subtitle_cert_collection">Ver Certificados</string>
+    <string name="subtitle_cert_detail">Detalles de Certificado</string>
+    <string name="subtitle_cert_extension">Extensiones de Certificado</string>
+    <string name="subtitle_cert_key_options">Opciones de Firma de Certificado</string>
+    <string name="subtitle_cert_add">Crear Certificado</string>
+    <string name="subtitle_cert_ca_elements">Selecciona los elementos de la CA</string>
+    <string name="subtitle_cert_sign_warning">Advertencia</string>
+    <string name="subtitle_cert_export">Exportar Certificado</string>
+    <string name="subtitle_cert_import">Importar Certificado</string>
+    <string name="subtitle_crl">CRL</string>
+    <string name="subtitle_trust_network">Red de Confianza</string>
+    <string name="subtitle_select_owner">Selecciona el propietario</string>
+    <string name="subtitle_select_list_owner">Selecciona el propietario de la lista</string>
+    <string name="subtitle_select_holder">Selecciona el titular</string>
+    <string name="subtitle_select_key">Selecciona la clave</string>
+    <string name="subtitle_select_ca">Selecciona la CA</string>
+    <string name="subtitle_select_certificate">Seleciona el certificado</string>
+    <string name="subtitle_open_file">Abrir Archivo</string>
+    <string name="subtitle_trust_cert_add">Agregar certificado a la red</string>
+    <string name="subtitle_trust_cert_update">Actualizar nivel de confianza</string>
+    <string name="subtitle_trust_cert_collection">Ver certificados de la lista</string>
+    <string name="subtitle_cert_verification_type">Selecciona el metodo de verificación</string>
+    <string name="subtitle_verification_pgp">Resultados de Verificación con PGP+</string>
+    <string name="subtitle_verification_x509">Resultados de Verificación con X509</string>
+    <string name="menu_add">Agregar</string>
+    <string name="menu_next">Siguiente</string>
+    <string name="menu_sign">Firmar</string>
+    <string name="menu_import">Importar</string>
+    <string name="menu_details">Detalles</string>
+    <string name="menu_delete">Eliminar</string>
+    <string name="menu_export">Exportar</string>
+    <string name="menu_send">Enviar</string>
+    <string name="menu_update">Modificar</string>
+    <string name="menu_cancel">Cancelar</string>
+    <string name="menu_verify">Verificar</string>
+    <string name="menu_continue">Continuar</string>
+    <string name="menu_finish">Finalizar</string>
+    <string name="action_details">Ver Detalles</string>
+    <string name="detail_title_key">Clave</string>
+    <string name="detail_title_advanced">Avanzado</string>
+    <string name="detail_title_owner">Propietario</string>
+    <string name="detail_title_file">Selecionar Archivo</string>
+    <string name="detail_title_certificate">Certificado</string>
+    <string name="detail_title_issuer">Emisor</string>
+    <string name="detail_title_holder">Titular</string>
+    <string name="detail_title_public_key">Clave Pública</string>
+    <string name="detail_title_private_key">Clave Privada</string>
+    <string name="detail_title_extension_standar">Estandar X509</string>
+    <string name="detail_title_extension_specific">Especificas</string>
+    <string name="detail_title_extension_position">Posición</string>
+    <string name="detail_title_secure_message">Mensaje</string>
+    <string name="detail_title_secure_file">Archivo</string>
+    <string name="detail_title_x509_type">X.509</string>
+    <string name="detail_title_pgp_type">PGP+</string>
+    <string name="detail_title_pgp_result">Total</string>
+    <string name="detail_title_pgp_signers">Emisores</string>
+    <string name="detail_title_x509_path">Ruta de Certificación</string>
+    <string name="detail_title_x509_result">Resultado</string>
+    <string name="lblKeyCount">Clave(s)</string>
+    <string name="lblCertCount">Certificado(s)</string>
+    <string name="lblTrustedCertCount">Certificado(s) agregados</string>
+    <string name="menu_option_error">Opción no disponible</string>
+    <string name="error_creating_db">Error al crear la base de datos, es imposible continuar</string>
+    <string name="error_db_load_key">Error al cargar la clave, ver el log para más detalles</string>
+    <string name="error_db_load_certs">Error al cargar los certificados, ver el log para más detalles</string>
+    <string name="error_db_load_key_password">Contraseña erronea</string>
+    <string name="error_db_load_cert">Error al cargar los certificados, ver el log para más detalles</string>
+    <string name="error_db_load_owner">Error al cargar los propietarios, ver el log para más detalles</string>
+    <string name="error_db_delete_key">Error al eliminar la clave, ver el log para más detalles</string>
+    <string name="error_db_update_key">Error al actualizar la clave, ver el log para más detalles</string>
+    <string name="error_db_export_key">Error al exportar la clave, ver el log para más detalles</string>
+    <string name="error_db_add_certificate">Error al crear el certificado, ver el log para más detalles</string>
+    <string name="error_db_add_subject">Error al agregar el propietario, ver el log para más detalles</string>
+    <string name="error_db_load_ca">Error al cargar las CAs, ver el log para más detalles</string>
+    <string name="error_db_load_trusted_certificate">Error al cargar listas de confianza, ver el log para más detalles</string>
+    <string name="error_db_load_crl">Error al cargar las CRL, ver el log para más detalles</string>
+    <string name="error_db_share_key">Error al compartir la clave, ver el log para más detalles</string>
+    <string name="error_db_load_secure_parameters_privatekey_sign">Error al cargar clave privada para firma, ver el log para más detalles</string>
+    <string name="error_db_load_secure_parameters_privatekey_decipher">Error al cargar clave privada para descifrado, ver el log para más detalles</string>
+    <string name="error_db_load_secure_parameters_certificate_cipher">Error al cargar certificado para cifrado, ver el log para más detalles</string>
+    <string name="error_db_load_secure_parameters_certificate_verify">Error al cargar certificado para verificación, ver el log para más detalles</string>
+    <string name="error_key_decode">Error al abrir detalles de la clave, ver el log para más detalles</string>
+    <string name="error_key_creation">Error al crear la clave, ver el log para más detalles</string>
+    <string name="error_key_import">Error al importar la clave, ver el log para más detalles</string>
+    <string name="error_key_share">Error al compartir la clave, ver el log para más detalles</string>
+    <string name="error_existing_owner">El propietario ya existe en este dispositivo</string>
+    <string name="error_empty_owner">Debes seleccionar un propietario</string>
+    <string name="error_empty_list_owner">Debes seleccionar una lista de confianza</string>
+    <string name="error_empty_crl">Debes seleccionar una CRL</string>
+    <string name="error_empty_holder">Debes seleccionar un titular</string>
+    <string name="error_empty_key">Debes seleccionar una clave</string>
+    <string name="error_empty_cert">Debes seleccionar un certificado</string>
+    <string name="error_empty_ca">Debes seleccionar una CA</string>
+    <string name="error_empty_password_key">Contraseña de clave vacía</string>
+    <string name="error_empty_password_pkcs">Contraseña de PKCS#12 vacía</string>
+    <string name="error_empty_keySize">Tamaño de clave vacío</string>
+    <string name="error_keySizeToShort">Tamaño de clave muy pequeño, debe ser al menos de 1024</string>
+    <string name="error_cert_decode">Error al abrir detalles del certificado, ver el log para más detalles</string>
+    <string name="error_cert_date_format">Valor de fecha no válido</string>
+    <string name="error_cert_not_after">Fecha de fin debe ser posterior a la fecha actual</string>
+    <string name="error_cert_not_after_before">Fecha de fin debe ser posterior a la fecha de inicio</string>
+    <string name="error_cert_empty_key_usage">Favor de seleccionar al menos un uso de la clave</string>
+    <string name="error_cert_holder_fields_count">Favor de ingresar al menos 4 campos referentes al titular</string>
+    <string name="error_cert_holder_fields_not_empty">Favor de ingresar al menos 4 campos no vacios referentes al titular</string>
+    <string name="error_cert_search_issuer">Certificado del emisor no encontrado</string>
+    <string name="error_cert_sign_parameters">Error en parametros de firma</string>
+    <string name="error_cert_parameters_match">La clave privada seleccionada no corresponde a la clave pública almacenada en el certificado seleccionado</string>
+    <string name="error_cert_export">Error al exportar el certificado, ver log para más detalles</string>
+    <string name="error_cert_import">Error al importar el certificado, ver log para más detalles</string>
+    <string name="error_cert_key_decode">Error: La clave pública almacenda en el certificada no puede ser leída</string>
+    <string name="error_cert_load_possible_ca">Error al buscar los posibles certificados de la CA firmante, ver log para más detalles</string>
+    <string name="error_cert_select_ca">Selecciona la CA firmante del certificado a importar</string>
+    <string name="error_cert_load_signers">Error al cargar la lista de emisores</string>
+    <string name="error_cert_share">Error al compatir certificado, ver log para más detalles</string>
+    <string name="error_trust_cert_add_db">Error al agregar el certificado de confianza a la lista, ver log para más detalles</string>
+    <string name="error_trust_cert_level">Error en el nivel de confianza</string>
+    <string name="error_trust_cert_duplicate">Error, el certificado ya está en la lista seleccionada</string>
+    <string name="error_trust_cert_update_db">Error al actualizar el nivel de confianza</string>
+    <string name="error_crypto_none_operation">No se ha seleccionado ninguna operación</string>
+    <string name="error_crypto_none_sign_private_key">No se ha seleccionado la clave privada para firmar</string>
+    <string name="error_crypto_none_decipher_private_key">No se ha seleccionado la clave privada para decifrar</string>
+    <string name="error_crypto_none_cipher_cert">No se ha seleccionado el certificado para cifrar</string>
+    <string name="error_crypto_none_verify_cert">No se ha seleccionado el certificado para verificar</string>
+    <string name="error_crypto_cipher_sign">Error al realizar el cifrado y firma, ver log para más detalles</string>
+    <string name="error_crypto_cipher">Error al cifrar, ver log para más detalles</string>
+    <string name="error_crypto_sign">Error al firmar, ver log para más detalles</string>
+    <string name="error_crypto_decipher_verify">Error al descifrar y verificar, ver log para más detalles</string>
+    <string name="error_crypto_decipher">Error al descifrar, ver log para más detalles</string>
+    <string name="error_crypto_verification">Error al verificar, ver log para más detalles</string>
+    <string name="error_crypto_cipher_ec">Para cifrar utilizando una clave pública de EC es necesario seleccionar una clave privada de EC</string>
+    <string name="error_crypto_decipher_ec">Para decifrar utilizando una clave privada de EC es necesario seleccionar un certificado que contenga una clave pública de EC</string>
+    <string name="error_crypto_operation_in_process">La operación no ha terminado, por lo que no hay datos para enviar</string>
+    <string name="error_crypto_none_file">Favor de seleccionar un archivo</string>
+    <string name="error_crypto_none_file_valid">El archivo seleccionado no es válido</string>
+    <string name="error_crypto_writing_resulting_file">Error al escribir el archivo resultante</string>
+    <string name="error_crypto_none_output_file">Favor de seleccionar un archivo de salida</string>
+    <string name="error_verify_x509">Error al realizar la verificación del certificado, ver el log para más detalles</string>
+    <string name="error_read_file">Error al leer el archivo seleccionado</string>
+    <string name="error_notmatch_password_key">Las contraseñas de clave son diferentes</string>
+    <string name="error_notmatch_password_pkcs">Las contraseñas de PKCS#12 son diferentes</string>
+    <string name="alert_dialog_key_delete_title">¿Desea eliminar esta clave?</string>
+    <string name="alert_dialog_trust_cert_delete_title">¿Desea eliminar este certificado de la lista?</string>
+    <string name="alert_dialog_key_open_private_title">Contraseña requerida</string>
+    <string name="alert_dialog_key_update_private_title">Contraseña actual requerida</string>
+    <string name="dialog_select_file_title">Seleccionar archivo</string>
+    <string name="lbl_alert_dialog_key_open_key">Clave privada</string>
+    <string name="lbl_alert_dialog_key_open_pkcs">Archivo PKCS#12</string>
+    <string name="alert_dialog_ok">OK</string>
+    <string name="alert_dialog_cancel">Cancelar</string>
+    <string name="lblKeyId">ID </string>
+    <string name="lblOwnerAlias">Alias del propietario</string>
+    <string name="lblHolderAlias">Alias del titular</string>
+    <string name="lblKeyComment">Comentario</string>
+    <string name="lblKeyID">ID Unico</string>
+    <string name="lblKeySize">Tamaño</string>
+    <string name="lblKeyRSAModulus">Módulo</string>
+    <string name="lblKeyRSAPublicExp">Exponente Público</string>
+    <string name="lblKeyRSAPrivateExp">Exponente Privado</string>
+    <string name="lblKeyRSAPrimeA">Primo A</string>
+    <string name="lblKeyRSAPrimeB">Primo B</string>
+    <string name="lblKeyRSAExponentA">Exponente A</string>
+    <string name="lblKeyRSAExponentB">Exponente B</string>
+    <string name="lblKeyRSACoefficient">Coeficiente</string>
+    <string name="lblECField">Campo</string>
+    <string name="lblFieldSize">Tamaño</string>
+    <string name="lblKeyECPrivate">Privada (Q)</string>
+    <string name="lblKeyECPublic">Pública (d)</string>
+    <string name="lblKeyECCurve">Parametros de la curva</string>
+    <string name="lblKeyECGenerator">Generador</string>
+    <string name="lblKeyECCurveA">A</string>
+    <string name="lblKeyECCurveB">B</string>
+    <string name="lblKeyECOrder">Orden</string>
+    <string name="lblKeyECCofactor">Cofactor</string>
+    <string name="lblAddNewOwner">Nuevo</string>
+    <string name="lblDeviceId">Id dispositivo</string>
+    <string name="lblKeyType">Tipo</string>
+    <string name="lblECCurveName">Curva</string>
+    <string name="db_delete_key_ok">La clave ha sido eliminada con éxito</string>
+
+    <string-array name="ecFieldArray">
+        <item>FP (Primo)</item>
+        <item>F2m (Binario)</item>
+    </string-array>
+
+    <string name="hintKeySize">1024,2048,4096</string>
+    <string name="lblPassword">Contraseña</string>
+    <string name="lblPasswordKey">Contraseña (Clave)</string>
+    <string name="lblPasswordPKCS12">Contraseña (PKCS#12)</string>
+    <string name="lblPasswordConfirm">Confirmar Contraseña</string>
+    <string name="lblIDEncoding">Codificación</string>
+    <string name="lblDigestSlc">Función picadillo</string>
+    <string name="lblSaveAsPKCS12">Guardar como PKCS#12</string>
+    <string name="msgAddOwnerOK">Propietario agregado correctamente!</string>
+    <string name="msgAddTrustedCertificateOK">Certificado agregado correctamente a la lista!</string>
+    <string name="msgAddKeyOK">Clave agregada correctamente!</string>
+    <string name="msgUpdateKeyOK">Clave modificada correctamente!</string>
+    <string name="msgUpdateTrustedCertificateOK">Nivel de confianza actualizado correctamente!</string>
+    <string name="msgExportKeyOK">Clave exportada correctamente!</string>
+    <string name="msgImportKeyOK">Clave importada correctamente!</string>
+    <string name="msgExportCertificateOK">Certificado exportado correctamente!</string>
+    <string name="msgImportCertificateOK">Certificado importado correctamente!</string>
+    <string name="msgAddCertificateOK">Certificado agregado correctamente!</string>
+    <string name="msgDeleteTrustedCertificateOK">Certificado eliminado correctamente de la lista!</string>
+    <string name="msgWorking">Favor de esperar&#8230;</string>
+    <string name="msgSelectCertificateFile">Primero selecciona un archivo</string>
+    <string name="msgLoadingCACertificateList">Cargando lista de certificados de CA, favor de esperar</string>
+    <string name="msgCryptoCipherSignOKMsg">Cifrado y firma de mensaje finalizado, resultado copiado al portapapeles</string>
+    <string name="msgCryptoDecipherVerifyOKMsg">El decifrado y la verificación del mensaje han finalizado, resultado copiado al portapapeles</string>
+    <string name="msgCryptoCipherSignOKFile">Cifrado y firma del archivo finalizado, resultado guardado en el archivo: </string>
+    <string name="msgCryptoDecipherVerifyOKFile">El decifrado y la verificación del archivo han finalizado, resultado guardado en el archivo: </string>
+    <string name="lblKeyUsageCRLSign">Firma de CRL</string>
+    <string name="lblKeyUsageDataSign">Firma de datos</string>
+    <string name="lblKeyUsageCertSign">Firma de certificados</string>
+    <string name="lblKeyUsageDataCipher">Cifrado de datos</string>
+    <string name="lblKeyUsageKeyCipher">Cifrado de claves</string>
+    <string name="lblKeyUsage">Usos de la clave</string>
+    <string name="lblKeyCreationDate">Fecha de creación</string>
+    <string name="lblUpdatePassword">Modificar contraseña</string>
+    <string name="noFilemanagerInstalled">No existe un administrador de archivos compatible instalado</string>
+    <string name="lblEncoding">Condificación</string>
+    <string name="lblProtectKey">Proteger con contraseña</string>
+    <string name="lblRecommended">* Valor recomendado</string>
+
+    <string-array name="arrayEncoding">
+        <item>PEM (*)</item>
+        <item>DER</item>
+    </string-array>
+
+    <string name="lblMessageExportFile">Archivo a exportar</string>
+    <string name="lblMessageImportFile">Archivo a importar</string>
+    <string name="lblMessageFile">Selecciona el archivo</string>
+    <string name="lblMessageOutputFile">Selecciona el archivo de salida</string>
+    <string name="lblWarningFileOverWrite">ADVERTENCIA: Se sobreescribira un archivo existente.</string>
+    <string name="lblWarningExportPublicKey">ADVERTENCIA: Exportar una clave pública, no exporta la identidad 
+        asociada a la misma, por lo que se recomienda exportar certificados en su lugar.</string>
+    <string name="lblWarningExportPrivateKey">ADVERTENCIA: Exportando una clave PRIVADA, sea cuidadoso.</string>
+    <string name="lblWarningExportPrivateKeyPlain">ADVERTENCIA: Exportar una clave PRIVADA sin proteccion de contraseña, 
+        no se recomienda en lo absoluto.</string>
+    <string name="lblDefaultKey">Favor de seleccionar un archivo y cargar los detalles de la clave</string>
+    <string name="lblLoadKeyDetails">Cargar detalles</string>
+    <string name="lblWarningImportUnknown">ADVERTENCIA: Si el tipo de clave no se conoce, el proceso de importación será significativamente más lento</string>
+
+    <string-array name="keyType">
+        <item>RSA Pública</item>
+        <item>RSA Privada</item>
+        <item>RSA PKCS#12</item>
+        <item>EC Pública</item>
+        <item>EC Privada</item>
+        <item>EC PKCS#12</item>
+        <item>No conocido</item>
+    </string-array>
+
+    <string name="lblCertificateSerialNumber">Número de serie</string>
+    <string name="lblCertificateDBStatus">Estatus (BD)</string>
+    <string name="lblCertificateDBStatusLastUpdate">Fecha de actualización de estatus</string>
+    <string name="lblCertificateCASubjectName">Alias del emisor</string>
+    <string name="lblCertificateSubjectName">Alias del titular</string>
+    <string name="lblCertificateVersion">Versión</string>
+    <string name="lblCertificateNotBefore">Inicio</string>
+    <string name="lblCertificateNotAfter">Fin</string>
+    <string name="lblCertificateSignaturenatureAlgorithm">Algoritmo de firma</string>
+    <string name="lblCertificateSignaturenature">Firma</string>
+    <string name="lblCertificateValidity">Periodo de Validez</string>
+    <string name="lblCertificateAuthKeyId">ID de clave del emisor</string>
+    <string name="lblCertificateIssuerDN">DN Emisor</string>
+    <string name="lblCertificateSubjectKeyId">ID de clave del titular</string>
+    <string name="lblCertificateTrustLevel">Nivel de Confianza</string>
+    <string name="lblImgSearchCertificate">Buscar certificado</string>
+    <string name="lblSeeExtension">Extensiones</string>
+    <string name="lblBack">Atras</string>
+    <string name="lblSeeDetails">Detalles</string>
+    <string name="lblAdd">Agregar</string>
+    <string name="lblCertificateId">Id</string>
+    <string name="lblCertificateKeyUsage">Uso de Clave</string>
+    <string name="lblCertificateBasicConstrain">Restricciones Básicas</string>
+    <string name="lblCertificateIsCA">Es AC</string>
+    <string name="lblCertificatePathLength">Longitug camino certificación</string>
+    <string name="lblCertificateDeviceId">ID Dispositivo de creación</string>
+    <string name="lblCertificateSignDeviceId">ID Dispositivo de firma</string>
+    <string name="lblCertificateType">Tipo</string>
+    <string name="lblCertificateUserId">Id de usuario en la organización</string>
+    <string name="lblCertificateUserPermission">Permisos en la organización</string>
+    <string name="lblCertificateIdentificationDocument">Documento de identificación</string>
+    <string name="lblCertificateCreationPossition">Ubicación GPS de creación</string>
+    <string name="lblSearchPointInMap">Ver en mapa</string>
+    <string name="lblCurrentlyNotAvailable">No disponible actualmente</string>
+    <string name="lblExtensionNotFound">No disponible</string>
+    <string name="lblIsCAYes">Sí</string>
+    <string name="lblIsCANo">No</string>
+    <string name="lblKeyPairOrigin">Origen del par de claves</string>
+    <string name="lblCertificateSignType">Tipo de firma del certificado</string>
+    <string name="lblNotAvailable">N/D</string>
+    <string name="lblUnkwnown">Desconocido</string>
+
+    <string-array name="keyOrigin">
+        <item>Par de claves existente</item>
+        <item>Nuevo par de claves</item>
+    </string-array>
+    <string-array name="certificateSignType">
+        <item>Autofimado</item>
+        <item>Firmado por una CA</item>
+    </string-array>
+    <string-array name="certificateType">
+        <item>CA Raíz</item>
+        <item>CA Intermedia</item>
+        <item>CA Final</item>
+        <item>Usuario Final</item>
+    </string-array>
+    <string-array name="certificateSignAlgorithmRSA">
+        <item>SHA1withRSA (*)</item>
+        <item>SHA224withRSA</item>
+        <item>SHA256withRSA</item>
+        <item>SHA384withRSA</item>
+        <item>SHA512withRSA</item>
+        <item>MD2withRSA</item>
+        <item>MD5withRSA</item>
+        <item>RIPEMD160withRSA</item>
+        <item>RIPEMD128withRSA</item>
+        <item>RIPEMD256withRSA</item>
+    </string-array>
+    <string-array name="certificateSignAlgorithmEC">
+        <item>SHA1withECDSA (*)</item>
+        <item>SHA224withECDSA</item>
+        <item>SHA256withECDSA</item>
+        <item>SHA384withECDSA</item>
+        <item>SHA512withECDSA</item>
+    </string-array>
+
+    <string name="lblKeyUsageDigitalSignature">Firma digital</string>
+    <string name="lblKeyUsageKeyCertSign">Firma de claves y certificados</string>
+    <string name="chkKeyUsageKeyAgreement">Acuerdo de claves</string>
+    <string name="chkKeyUsageNonRepudiation">No repudio</string>
+    <string name="chkKeyUsageEncipherOnly">Solo cifrado (Acuerdo de claves)</string>
+    <string name="chkKeyUsageDecipherOnly">Solo decifrado (Acuerdo de claves)</string>
+    <string name="txtCertificateUserId">Valor del id</string>
+    <string name="txtCertificateUserPermission">Valor del id</string>
+    <string name="txtCertificateIdentificationDocument">IFE, Cartilla, etc.</string>
+    <string name="lblSelectHolderInformation">Selecciona el campo de información deseado, posteriormente selecciona \"Agregar\" para crear dicho campo</string>
+    <string name="certificateSignTypeUnknown">Desconocido</string>
+    <string name="certificateSignTypeSelfSigned">Autofirmado</string>
+    <string name="certificateSignTypeCASigned">Firmado por una CA</string>
+    <string name="lblCertificateSignTypeWarningUnknown">Si el tipo de firma en el certificado es desconocida, podría significar que el certificado seleccionado no cumple por completo con el estandar X509 (que se describe en el RFC-5280) debido a que el certificado no contiene las extensiones \'Authority Key Identifier\' o \'Subject Key Identifier\' marcadas como obligatorias para los certificados V3. Firme este certificado bajo su propio riesgo, es altamente recomendable verificar el certificado antes, con el fin de garantizar la identidad del titular.</string>
+    <string name="lblCertificateSignTypeWarningSelfSigned">Los certificados autofirmados son certificados firmados por el titular del mismo utilizando su propia clave privada, con el fin de demostrar que posee las dos claves (privada y pública), por lo que se recomienda verificar la firma del certificado antes de continuar con el proceso de firmado, de esta forma usted puede estar seguro de que el titular tiene ambas claves. </string>
+    <string name="lblCertificateSignTypeWarningCASigned">Certificados firmados por una CA, son los certificados más comunes, estos son firmados por una entidad diferente a la del titular, la entidad que firma el certificado debe ser una entidad de confianza por lo que se recomienda altamente verificar este certificado para comprobar quien lo firmó y así determinar si usted puede confiar en su firma o no. Firmar un certificado no confiable podría hacer que otras entidades confien en el certificado, así que tenga cuidado.</string>
+    <string name="lblSelectCA">Selecciona el certificado de la CA firmante</string>
+    <string name="lblPublishDate">Fecha de publicación </string>
+    <string name="txtMessage">Inserta el mensaje</string>
+
+    <string-array name="cryptoOperationType">
+        <item>Cifrar y firmar</item>
+        <item>Descifrar y verificar</item>
+    </string-array>
+
+    <string name="lblOperation">Tipo de Operación</string>
+    <string name="lblCipher">Cifrar</string>
+    <string name="lblImgSearchCipherPublicCert">Buscar certificado receptor</string>
+    <string name="lblDeleteAfter">Elimiar archivo al terminar</string>
+    <string name="lblSign">Firmar</string>
+    <string name="lblImgSearchSignPrivateKey">Buscar clave privada</string>
+    <string name="lblDecipher">Descifrar</string>
+    <string name="lblImgSearchDecipherPrivateKey">Buscar clave privada</string>
+    <string name="lblVerify">Verificar firma</string>
+    <string name="lblImgSearchVerifyPublicCert">Buscar certificado emisor</string>
+    <string name="lblStatus">Estatus</string>
+    <string name="lblImgVerifyResult">Verificación de firma: </string>
+
+</resources>

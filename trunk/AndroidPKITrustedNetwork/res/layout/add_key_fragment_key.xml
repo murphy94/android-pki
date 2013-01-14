@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <!-- Dummy item to prevent EditText from receiving focus -->
+
+        <LinearLayout
+            android:id="@+id/linearLayout_focus"
+            android:layout_width="0px"
+            android:layout_height="0px"
+            android:focusable="true"
+            android:focusableInTouchMode="true" />
+
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/typeLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="20dip" >
+
+            <!-- Type -->
+
+            <TextView
+                android:id="@+id/lblType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/lblKeyType"
+                android:textSize="15dip"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinnerKeyType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/lblType" />
+        </RelativeLayout>
+
+        <ViewFlipper
+            android:id="@+id/flipperType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/typeLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dip" >
+
+            <RelativeLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/lblKeySize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="5dip"
+                    android:text="@string/lblKeySize"
+                    android:textSize="15dip"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/txtSize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dip"
+                    android:layout_toRightOf="@id/lblKeySize"
+                    android:hint="@string/hintKeySize"
+                    android:inputType="number"
+                    android:textSize="15dip"
+                    android:width="150dip" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <!--
+                     <RelativeLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/ecFieldLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true" >
+                -->
+
+
+                <!-- Field -->
+
+
+                <!--
+                <TextView
+                        android:id="@+id/lblECField"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/lblECField"
+                        android:textSize="15dip"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/spinnerECField"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_toRightOf="@+id/lblECField" />
+                </RelativeLayout>
+                
+
+                <RelativeLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/ecCurveLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true" >
+                -->
+
+
+                <!-- Curve -->
+
+                <TextView
+                    android:id="@+id/lblECCurveName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/lblECCurveName"
+                    android:textSize="15dip"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/spinnerECCurve"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/lblECCurveName" />
+                <!-- </RelativeLayout> -->
+            </RelativeLayout>
+        </ViewFlipper>
+
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/layoutPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/flipperType"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dip" >
+
+            <TextView
+                android:id="@+id/lblPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="@string/lblPasswordKey"
+                android:textSize="15dip"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txtPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/lblPassword"
+                android:layout_marginLeft="10dip"
+                android:hint="@string/lblPassword"
+                android:inputType="textPassword"
+                android:textSize="15dip"
+                android:width="225dip" />
+
+            <EditText
+                android:id="@+id/txtPasswordConfirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/txtPassword"
+                android:layout_marginLeft="10dip"
+                android:hint="@string/lblPasswordConfirm"
+                android:inputType="textPassword"
+                android:textSize="15dip"
+                android:width="225dip" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/layoutComment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layoutPassword"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dip" >
+
+            <TextView
+                android:id="@+id/lblKeyComment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="@string/lblKeyComment"
+                android:textSize="15dip"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txtKeyComment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/lblKeyComment"
+                android:layout_marginLeft="10dip"
+                android:hint="@string/lblKeyComment"
+                android:textSize="15dip"
+                android:width="250dip" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</ScrollView>

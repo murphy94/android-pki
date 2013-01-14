@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center" >
+
+    <TextView
+        android:id="@+id/lblTrustLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/lblCertificateTrustLevel"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/txtTrustLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblTrustLevel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dip"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/layoutSeekCertificateTrustLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtTrustLevel"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="15dip"
+        android:gravity="center" >
+
+        <SeekBar
+            android:id="@+id/seekCertificateTrustLevel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:max="200"
+            android:progressDrawable="@drawable/seekbar_layout"
+            android:thumb="@drawable/seekbar_progress_thumb" >
+        </SeekBar>
+
+        <ImageView
+            android:id="@+id/imgCenter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/seekCertificateTrustLevel"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/action_details"
+            android:src="@drawable/center" />
+
+        <ImageView
+            android:id="@+id/imgHorizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/seekCertificateTrustLevel"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/action_details"
+            android:scaleType="fitXY"
+            android:src="@drawable/horizontal" />
+
+        <ImageView
+            android:id="@+id/imgBadTrust"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/seekCertificateTrustLevel"
+            android:contentDescription="@string/action_details"
+            android:src="@drawable/ic_action_trust_null" />
+
+        <ImageView
+            android:id="@+id/imgGoodTrust"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/seekCertificateTrustLevel"
+            android:contentDescription="@string/action_details"
+            android:src="@drawable/ic_action_trust_complete" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center" >
+
+    <!-- Certificate Serial Number -->
+
+    <TextView
+        android:id="@+id/lblCertificateSerialNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/lblCertificateSerialNumber"
+        android:textSize="15dip" />
+
+    <TextView
+        android:id="@+id/txtCertificateSerialNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/lblCertificateSerialNumber"
+        android:layout_marginLeft="15dip"
+        android:layout_toRightOf="@id/lblCertificateSerialNumber"
+        android:textSize="15dip"
+        android:textStyle="bold" />
+
+    <!-- Certificate Signature Type -->
+
+    <TextView
+        android:id="@+id/lblCertificateSignType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/lblCertificateSerialNumber"
+        android:text="@string/lblCertificateSignType"
+        android:textSize="15dip" />
+
+    <TextView
+        android:id="@+id/txtCertificateSignType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblCertificateSignType"
+        android:layout_marginLeft="15dip"
+        android:textSize="15dip"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/lblCertificateSignTypeWarning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/txtCertificateSignType"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_marginTop="15dip"
+        android:textSize="15dip"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/lblImgVerifyCertificate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblCertificateSignTypeWarning"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dip"
+        android:drawableLeft="@drawable/ic_action_cert_verify"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="@string/menu_verify"
+        android:textSize="15dip"
+        android:textStyle="bold" />
+
+</RelativeLayout>

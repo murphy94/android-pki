@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <!-- Dummy item to prevent EditText from receiving focus -->
+
+        <LinearLayout
+            android:id="@+id/linearLayout_focus"
+            android:layout_width="0px"
+            android:layout_height="0px"
+            android:focusable="true"
+            android:focusableInTouchMode="true" />
+
+        <EditText
+            android:id="@+id/txtMessage"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:gravity="top|left"
+            android:hint="@string/txtMessage"
+            android:lines="10"
+            android:singleLine="false" />
+
+        <RelativeLayout
+            android:id="@+id/layoutVerifyResults"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtMessage"
+            android:layout_centerHorizontal="true" >
+
+            <TextView
+                android:id="@+id/imgVerifyResultOk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:drawableRight="@drawable/ic_verify_res_ok"
+                android:gravity="center"
+                android:text="@string/lblImgVerifyResult"
+                android:textSize="15dip"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/imgVerifyResultFail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:drawableRight="@drawable/ic_verify_res_no"
+                android:gravity="center"
+                android:text="@string/lblImgVerifyResult"
+                android:textSize="15dip"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/embeddedSecureOptionsMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layoutVerifyResults"
+            android:layout_centerHorizontal="true"
+            android:padding="6dp" />
+    </RelativeLayout>
+
+</ScrollView>

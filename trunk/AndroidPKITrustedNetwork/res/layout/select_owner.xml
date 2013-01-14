@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- Dummy item to prevent EditText from receiving focus -->
+
+    <LinearLayout
+        android:id="@+id/linearLayout_focus"
+        android:layout_width="0px"
+        android:layout_height="0px"
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
+
+    <!-- newOwner -->
+
+    <TextView
+        android:id="@+id/lblAddNewOwner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="10dip"
+        android:text="@string/lblAddNewOwner"
+        android:textSize="15dip"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/newLayOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/lblAddNewOwner"
+        android:layout_below="@id/lblAddNewOwner"
+        android:layout_marginLeft="10dip" >
+
+        <!-- Owner Name -->
+
+        <EditText
+            android:id="@+id/txtOwnerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:hint="@string/lblOwnerAlias"
+            android:textSize="15dip" />
+
+        <!-- Add Image button -->
+
+        <TextView
+            android:id="@+id/lblImgAddNewOwner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dip"
+            android:layout_toRightOf="@id/txtOwnerName"
+            android:drawableLeft="@drawable/ic_action_add"
+            android:gravity="center"
+            android:text="@string/lblAdd"
+            android:textSize="17dip"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/newLayOut"
+        android:layout_marginTop="10dip"
+        android:choiceMode="singleChoice"
+        android:drawSelectorOnTop="true" />
+
+</RelativeLayout>

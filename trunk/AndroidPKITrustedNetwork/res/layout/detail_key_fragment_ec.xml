@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center" >
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/layoutDetailKeyEC"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/lblImgHideDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="15dip"
+            android:layout_marginTop="10dip"
+            android:drawableTop="@drawable/ic_action_see_hide"
+            android:gravity="center"
+            android:text="@string/lblBack"
+            android:textSize="15dip"
+            android:textStyle="bold" />
+
+        <!-- Field -->
+
+        <TextView
+            android:id="@+id/lblDetailsKeyECField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="10dip"
+            android:text="@string/lblECField"
+            android:textSize="15dip" />
+
+        <TextView
+            android:id="@+id/txtDetailsKeyECField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/lblDetailsKeyECField"
+            android:layout_marginLeft="20dip"
+            android:singleLine="false"
+            android:textSize="15dip"
+            android:textStyle="bold" />
+
+        <!-- Field Size -->
+
+        <TextView
+            android:id="@+id/lblDetailsKeyECFieldSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/txtDetailsKeyECField"
+            android:layout_marginLeft="10dip"
+            android:text="@string/lblFieldSize"
+            android:textSize="15dip" />
+
+        <TextView
+            android:id="@+id/txtDetailsKeyECFieldSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/lblDetailsKeyECFieldSize"
+            android:layout_marginLeft="20dip"
+            android:singleLine="false"
+            android:textSize="15dip"
+            android:textStyle="bold" />
+
+        <!-- Key Private -->
+
+        <TextView
+            android:id="@+id/lblDetailsKeyECPrivate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/txtDetailsKeyECFieldSize"
+            android:layout_marginLeft="10dip"
+            android:text="@string/lblKeyECPrivate"
+            android:textSize="15dip" />
+
+        <TextView
+            android:id="@+id/txtDetailsKeyECPrivate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/lblDetailsKeyECPrivate"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="10dip"
+            android:singleLine="false"
+            android:textSize="13dip"
+            android:textStyle="bold" />
+
+        <!-- Public Key -->
+
+        <TextView
+            android:id="@+id/lblDetailsKeyECPublic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/txtDetailsKeyECPrivate"
+            android:layout_marginLeft="10dip"
+            android:text="@string/lblKeyECPublic"
+            android:textSize="15dip" />
+
+        <TextView
+            android:id="@+id/txtDetailsKeyECPublic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/lblDetailsKeyECPublic"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="10dip"
+            android:singleLine="false"
+            android:textSize="13dip"
+            android:textStyle="bold" />
+
+        <!-- Curve Parameters -->
+
+        <TextView
+            android:id="@+id/lblDetailsKeyECCurve"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/txtDetailsKeyECPublic"
+            android:layout_marginLeft="10dip"
+            android:text="@string/lblKeyECCurve"
+            android:textSize="15dip" />
+
+        <!-- Generator -->
+
+        <TextView
+            android:id="@+id/lblDetailsKeyECGenerator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/lblDetailsKeyECCurve"
+            android:layout_marginLeft="20dip"
+            android:text="@string/lblKeyECGenerator"
+            android:textSize="15dip" />
+
+        <TextView
+            android:id="@+id/txtDetailsKeyECGenerator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/lblDetailsKeyECGenerator"
+            android:layout_marginLeft="30dip"
+            android:layout_marginRight="10dip"
+            android:singleLine="false"
+            android:textSize="13dip"
+            android:textStyle="bold" />
+
+        <!-- Curve A -->
+
+        <TextView
+            android:id="@+id/lblDetailsKeyECCurveA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/txtDetailsKeyECGenerator"
+            android:layout_marginLeft="20dip"
+            android:text="@string/lblKeyECCurveA"
+            android:textSize="15dip" />
+
+        <TextView
+            android:id="@+id/txtDetailsKeyECCurveA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/lblDetailsKeyECCurveA"
+            android:layout_marginLeft="30dip"
+            android:layout_marginRight="10dip"
+            android:singleLine="false"
+            android:textSize="13dip"
+            android:textStyle="bold" />
+
+        <!-- Curve B -->
+
+        <TextView
+            android:id="@+id/lblDetailsKeyECCurveB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/txtDetailsKeyECCurveA"
+            android:layout_marginLeft="20dip"
+            android:text="@string/lblKeyECCurveB"
+            android:textSize="15dip" />
+
+        <TextView
+            android:id="@+id/txtDetailsKeyECCurveB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/lblDetailsKeyECCurveB"
+            android:layout_marginLeft="30dip"
+            android:layout_marginRight="10dip"
+            android:singleLine="false"
+            android:textSize="13dip"
+            android:textStyle="bold" />
+
+        <!-- Order -->
+
+        <TextView
+            android:id="@+id/lblDetailsKeyECOrder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/txtDetailsKeyECCurveB"
+            android:layout_marginLeft="20dip"
+            android:text="@string/lblKeyECOrder"
+            android:textSize="15dip" />
+
+        <TextView
+            android:id="@+id/txtDetailsKeyECOrder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/lblDetailsKeyECOrder"
+            android:layout_marginLeft="30dip"
+            android:layout_marginRight="10dip"
+            android:singleLine="false"
+            android:textSize="13dip"
+            android:textStyle="bold" />
+
+        <!-- Curve Cofactor -->
+
+        <TextView
+            android:id="@+id/lblDetailsKeyECCofactor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/txtDetailsKeyECOrder"
+            android:layout_marginLeft="20dip"
+            android:text="@string/lblKeyECCofactor"
+            android:textSize="15dip" />
+
+        <TextView
+            android:id="@+id/txtDetailsKeyECCofactor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/lblDetailsKeyECCofactor"
+            android:layout_marginLeft="30dip"
+            android:layout_marginRight="10dip"
+            android:singleLine="false"
+            android:textSize="13dip"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</ScrollView>

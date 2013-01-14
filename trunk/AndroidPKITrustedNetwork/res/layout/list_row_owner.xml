@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dip">
+
+    <!-- Owner Name -->
+
+    <TextView
+        android:id="@+id/txtKeyOwnerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:textSize="15dip"
+        android:textStyle="bold" />
+
+    <!-- Device Id -->
+
+    <TextView
+        android:id="@+id/lblOwnerDeviceId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/txtKeyOwnerName"
+        android:layout_below="@id/txtKeyOwnerName"
+        android:layout_marginLeft="10dip"
+        android:textSize="10dip" />
+
+</RelativeLayout>

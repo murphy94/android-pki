@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutDetailKey"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center" >
+
+    <!-- Key Id -->
+
+    <TextView
+        android:id="@+id/lblDetailsKeyId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/lblKeyId"
+        android:textSize="15dip" />
+
+    <TextView
+        android:id="@+id/txtDetailsKeyId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/lblDetailsKeyId"
+        android:layout_marginLeft="15dip"
+        android:layout_toRightOf="@id/lblDetailsKeyId"
+        android:textSize="15dip"
+        android:textStyle="bold" />
+
+    <!-- Key Owner Name -->
+
+    <TextView
+        android:id="@+id/lblDetailsKeyOwnerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/lblDetailsKeyId"
+        android:text="@string/lblOwnerAlias"
+        android:textSize="15dip" />
+
+    <TextView
+        android:id="@+id/txtDetailsKeyOwnerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/lblDetailsKeyOwnerName"
+        android:layout_marginLeft="10dip"
+        android:singleLine="false"
+        android:textSize="15dip"
+        android:textStyle="bold" />
+
+    <!-- Key Unique id -->
+
+    <TextView
+        android:id="@+id/lblDetailsKeyUniqueID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/txtDetailsKeyOwnerName"
+        android:text="@string/lblKeyID"
+        android:textSize="15dip" />
+
+    <TextView
+        android:id="@+id/txtDetailsKeyUniqueID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/lblDetailsKeyUniqueID"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="20dip"
+        android:singleLine="false"
+        android:textSize="15dip"
+        android:textStyle="bold" />
+
+    <!-- Key Type -->
+
+    <TextView
+        android:id="@+id/lblDetailsKeyType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/txtDetailsKeyUniqueID"
+        android:text="@string/lblKeyType"
+        android:textSize="15dip" />
+
+    <TextView
+        android:id="@+id/txtDetailsKeyType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/lblDetailsKeyType"
+        android:layout_marginLeft="10dip"
+        android:singleLine="false"
+        android:textSize="15dip"
+        android:textStyle="bold" />
+
+    <!-- Key Comment -->
+
+    <TextView
+        android:id="@+id/lblDetailsKeyComment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/txtDetailsKeyType"
+        android:text="@string/lblKeyComment"
+        android:textSize="15dip" />
+
+    <TextView
+        android:id="@+id/txtDetailsKeyComment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/lblDetailsKeyComment"
+        android:layout_marginLeft="10dip"
+        android:singleLine="false"
+        android:textSize="15dip"
+        android:textStyle="bold" />
+
+    <!-- Key Creation Date -->
+
+    <TextView
+        android:id="@+id/lblDetailsKeyCreationDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/txtDetailsKeyComment"
+        android:text="@string/lblKeyCreationDate"
+        android:textSize="15dip" />
+
+    <TextView
+        android:id="@+id/txtDetailsKeyCreationDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/lblDetailsKeyCreationDate"
+        android:layout_marginLeft="10dip"
+        android:singleLine="false"
+        android:textSize="15dip"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/lblImgSeeMoreDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtDetailsKeyCreationDate"
+        android:layout_marginLeft="15dip"
+        android:layout_marginTop="10dip"
+        android:drawableLeft="@drawable/ic_action_see_more"
+        android:gravity="center"
+        android:text="@string/lblSeeDetails"
+        android:textSize="15dip"
+        android:textStyle="bold" />
+
+</RelativeLayout>
