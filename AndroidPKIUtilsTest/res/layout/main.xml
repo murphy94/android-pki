@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/relativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/txtTitle"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/txtStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtTitle"
+            android:layout_centerHorizontal="true"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <RadioGroup
+            android:id="@+id/rdbGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtStatus"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical" >
+
+            <RadioButton
+                android:id="@+id/rdbAES"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rdbAES" />
+
+            <RadioButton
+                android:id="@+id/rdbRSA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rdbRSA" />
+
+            <RadioButton
+                android:id="@+id/rdbEC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rdbEC" />
+
+            <RadioButton
+                android:id="@+id/rdbX509"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rdbX509" />
+
+            <RadioButton
+                android:id="@+id/rdbPGP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rdbPGP" />
+
+            <RadioButton
+                android:id="@+id/rdbKeyStore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rdbKeyStore" />
+
+            <RadioButton
+                android:id="@+id/rdbDB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rdbDB" />
+        </RadioGroup>
+
+        <CheckBox
+            android:id="@+id/chkDetailResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rdbGroup"
+            android:layout_centerHorizontal="true"
+            android:text="@string/chkDetailResult" />
+
+        <CheckBox
+            android:id="@+id/chkTiming"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/chkDetailResult"
+            android:layout_centerHorizontal="true"
+            android:text="@string/chkTiming" />
+
+        <Button
+            android:id="@+id/btnIniciar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/chkTiming"
+            android:layout_centerHorizontal="true"
+            android:text="@string/btnStart" />
+    </RelativeLayout>
+
+</ScrollView>
