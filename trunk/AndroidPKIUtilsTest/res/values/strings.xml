@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, SCCipherTestActivity!</string>
+    <string name="app_name">SCCipherTest</string>
+    <string name="rdbAES">AES</string>
+    <string name="rdbRSA">RSA</string>
+    <string name="rdbEC">EC</string>
+    <string name="rdbX509">X509</string>
+    <string name="rdbPGP">PGP</string>
+    <string name="rdbKeyStore">KeyStore</string>
+    <string name="btnStart">Iniciar</string>
+    <string name="txtTitle">Selecciona la prueba a realizar</string>
+    <string name="chkDetailResult">Detallado</string>
+    <string name="rdbDB">DataBase</string>
+    <string name="chkTiming">Timing</string>
+</resources>
