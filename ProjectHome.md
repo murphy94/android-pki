@@ -1,0 +1,1 @@
+This project is the result of mi master degree thesis, in this library users can use public key criptography for creating keys, import and export keys, create X.509 certificate, import and export certificates and using all of this for sign and cipher messages or files.
